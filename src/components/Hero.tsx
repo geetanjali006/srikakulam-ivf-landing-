@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Calendar, MapPin, Sparkles, CheckCircle2, User, Phone, ChevronRight, Award, Heart, Star, ShieldCheck, Tag } from 'lucide-react';
+import { Calendar, MapPin, Sparkles, User, Phone, ChevronRight, Award, Heart, Star, ShieldCheck, Tag } from 'lucide-react';
 import { Translation } from '../data/translations';
 
 interface HeroProps {
@@ -74,18 +74,6 @@ export const Hero: React.FC<HeroProps> = ({ t, onFormSubmit }) => {
               {t.hero.subtext}
             </p>
 
-            {/* 5 Key Badges / Trust Highlights */}
-            <div className="flex flex-wrap items-center gap-2 pt-1 pb-1">
-              {t.hero.keyPoints.map((point, idx) => (
-                <div 
-                  key={idx}
-                  className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-white/95 border border-[#652D6C]/15 shadow-sm text-xs sm:text-sm font-bold text-[#3D1443]"
-                >
-                  <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0" />
-                  <span>{point}</span>
-                </div>
-              ))}
-            </div>
 
             {/* Srikakulam Branch Complete IVF at ₹1.5 Lakhs Only Callout Banner */}
             <div className="w-full bg-gradient-to-r from-[#FDE8E8] via-[#FFF3D6] to-[#FDE8E8] border border-amber-400/80 text-[#45144A] px-4 sm:px-5 py-2 sm:py-2.5 rounded-xl shadow-sm flex items-center gap-2 overflow-hidden">
