@@ -170,11 +170,11 @@ export const translations: Record<Language, Translation> = {
       tagline: "అత్యుత్తమ ఫెర్టిలిటీ సంరక్షణ. తల్లిదండ్రులు కావాలనే మీ ప్రయాణం ఇక్కడే మొదలవుతుంది.",
       subtext: "రుజువైన విజయవంతమైన రేట్లు, అగ్రశ్రేణి సంతానలేమి నిపుణులు మరియు అందుబాటు ధరల సంపూర్ణ చికిత్సా ప్రణాళికల కోసం మెడ్సీని ఎంచుకోండి. ఎటువంటి దాగి ఉన్న రుసుములు లేదా రిజిస్ట్రేషన్ ఛార్జీలు లేవు — మీరు తల్లిదండ్రులు కావడానికి తోడ్పడే నిజమైన నిపుణుల సంరక్షణ మాత్రమే.",
       locationBadge: "అరిలోవ హెల్త్ సిటీ, విశాఖపట్నం",
-      offerBadge: "SPECIAL DISCOUNT PACKAGE OFFER",
-      offerText: "IVF చికిత్స కేవలం ₹1.8 లక్షలకే!",
+      offerBadge: "శ్రీకాకుళం బ్రాంచ్ ప్రత్యేక ఆఫర్",
+      offerText: "శ్రీకాకుళం బ్రాంచ్‌లో సంపూర్ణ IVF చికిత్స కేవలం ₹1.5 లక్షలకే!",
       offerOriginalPrice: "సాధారణ మార్కెట్ ధర: ₹1.9 లక్షలు",
-      offerSaveTag: "రూ. 10,000 వర్సెస్ ₹1.9L తక్షణ ఆదా!",
-      offerNote: "గమనిక: బయట క్లినిక్‌లలో రూ. 1.9L ఉండే ప్యాకేజీని మెడ్సీ IVF ప్రత్యేక డిస్కౌంట్ ఆఫర్‌తో రూ. 1.8L కే అందిస్తోంది.",
+      offerSaveTag: "రూ. 40,000 తక్షణ ఆదా (సాధారణంగా ₹1.9L)!",
+      offerNote: "గమనిక: బయట క్లినిక్‌లలో రూ. 1.9L ఉండే ప్యాకేజీని మెడ్సీ IVF శ్రీకాకుళం బ్రాంచ్‌లో ప్రత్యేక ఆఫర్‌తో కేవలం రూ. 1.5L కే అందిస్తోంది.",
       srikakulamOffer: "శ్రీకాకుళం బ్రాంచ్‌లో సంపూర్ణ IVF చికిత్స కేవలం ₹1.5 లక్షలకే!",
       keyPoints: [
         "ఉచిత నిపుణుల సంప్రదింపులు",
@@ -199,14 +199,14 @@ export const translations: Record<Language, Translation> = {
     stats: {
       cases: "8,000+",
       casesLabel: "విజయవంతమైన కేసులు",
-      startingPrice: "₹1.8L",
+      startingPrice: "₹1.5L",
       startingPriceLabel: "IVF ప్యాకేజ్ ప్రారంభం",
       successRate: "ఉచితం",
       successRateLabel: "సంప్రదింపులు & కౌన్సెలింగ్"
     },
     inclusions: {
       badge: "INCLUSIONS",
-      title: "1.8 Lakh Package Inclusions",
+      title: "1.5 Lakh Package Inclusions",
       subtitle: "",
       items: [
         {
@@ -254,8 +254,8 @@ export const translations: Record<Language, Translation> = {
       pricingSubtitle: "ప్రతి దంపతుల అవసరాలకు అనుగుణంగా అనుకూలమైన ధరలలో అందుబాటులో ఉన్నాయి.",
       packages: [
         {
-          name: "IVF / ICSI సంపూర్ణ ప్యాకేజ్",
-          price: "₹1.8 లక్షలు",
+          name: "IVF / ICSI సంపూర్ణ ప్యాకేజ్ (శ్రీకాకుళం బ్రాంచ్)",
+          price: "₹1.5 లక్షలు",
           subnote: "అన్ని రకాల పరీక్షలు, OT, ఇంజెక్షన్లు & 6 నెలల ఫ్రీజింగ్‌తో",
           highlights: ["IVF ప్రొఫైలింగ్ & స్కాన్లు", "స్టిమ్యులేషన్ & ట్రిగ్గర్ షాట్", "Embryo ట్రాన్స్‌ఫర్ & ఫ్రీజింగ్", "Semen Backup చేర్చబడింది"],
           featured: true
@@ -354,7 +354,7 @@ export const translations: Record<Language, Translation> = {
           a: "ఉచిత ఫెర్టిలిటీ కన్సల్టేషన్, ఉచిత కౌన్సెలింగ్ మరియు శ్రీకాకుళం బ్రాంచ్‌లో ₹1.5 లక్షలకే IVF ఆఫర్ లభిస్తాయి."
         },
         {
-          q: "IVF ₹1.8 లక్షల ప్యాకేజీలో ఏమేమి చేర్చబడ్డాయి?",
+          q: "IVF ₹1.5 లక్షల ప్యాకేజీలో ఏమేమి చేర్చబడ్డాయి?",
           a: "IVF ప్రొఫైలింగ్ పరీక్షలు, స్కాన్లు, స్టిమ్యులేషన్ ఇంజెక్షన్లు, IVF/ICSI ప్రక్రియ, OT ఛార్జీలు, Embryo ట్రాన్స్‌ఫర్, Semen backup మరియు 6 నెలల Embryo ఫ్రీజింగ్ చేర్చబడ్డాయి."
         },
         {
@@ -415,11 +415,11 @@ export const translations: Record<Language, Translation> = {
       tagline: "Expert fertility care. Your journey to parenthood starts here.",
       subtext: "Choose Medcy for proven success rates, top-tier fertility specialists, and highly affordable, all-inclusive treatment plans. No hidden fees, no registration charges—just genuine, expert care to help you become parents.",
       locationBadge: "Arilova Health City, Visakhapatnam",
-      offerBadge: "SPECIAL DISCOUNT PACKAGE OFFER",
-      offerText: "IVF TREATMENT AT ₹1.8 LAKHS ONLY",
+      offerBadge: "SRIKAKULAM BRANCH SPECIAL OFFER",
+      offerText: "In Srikakulam Branch, Complete IVF Treatment at ₹1.5 Lakhs Only",
       offerOriginalPrice: "Standard Market Price: ₹1.9 Lakhs",
-      offerSaveTag: "SAVE ₹10,000 VS REGULAR ₹1.9L!",
-      offerNote: "Note: Standard market clinics charge ₹1.9 Lakhs — Medcy IVF provides complete treatment package at ₹1.8 Lakhs.",
+      offerSaveTag: "SAVE ₹40,000 VS REGULAR ₹1.9L!",
+      offerNote: "Note: Standard market clinics charge ₹1.9 Lakhs — Medcy IVF provides complete treatment package at ₹1.5 Lakhs in Srikakulam Branch.",
       srikakulamOffer: "In Srikakulam Branch, Complete IVF Treatment at ₹1.5 Lakhs Only",
       keyPoints: [
         "Free Expert Consultation",
@@ -444,14 +444,14 @@ export const translations: Record<Language, Translation> = {
     stats: {
       cases: "8,000+",
       casesLabel: "Successful Cases",
-      startingPrice: "₹1.8L",
+      startingPrice: "₹1.5L",
       startingPriceLabel: "Starting IVF Package",
       successRate: "FREE",
       successRateLabel: "Consultation & Counselling"
     },
     inclusions: {
       badge: "INCLUSIONS",
-      title: "1.8 Lakh Package Inclusions",
+      title: "1.5 Lakh Package Inclusions",
       subtitle: "",
       items: [
         {
@@ -499,8 +499,8 @@ export const translations: Record<Language, Translation> = {
       pricingSubtitle: "Customized treatment plans tailored to your specific medical profile.",
       packages: [
         {
-          name: "All-Inclusive IVF / ICSI Package",
-          price: "₹1.8 Lakhs",
+          name: "All-Inclusive IVF / ICSI Package (Srikakulam Branch)",
+          price: "₹1.5 Lakhs",
           subnote: "Includes tests, scans, injections, OT, ET & 6 months freezing",
           highlights: ["Profiling Tests & Scans", "Stimulation & Trigger Shot", "Embryo Transfer & Freezing", "Semen Backup Included"],
           featured: true
@@ -599,7 +599,7 @@ export const translations: Record<Language, Translation> = {
           a: "The camp includes free initial fertility consultation, complimentary expert counselling, report evaluation, and special Srikakulam branch IVF rates from ₹1.5 Lakhs."
         },
         {
-          q: "What is included in the ₹1.8 Lakh IVF Package?",
+          q: "What is included in the ₹1.5 Lakh IVF Package?",
           a: "It includes profiling tests, scans, semen backup, stimulation injections, IVF/ICSI procedure, OT charges, embryo transfer, and 6 months embryo freezing."
         },
         {

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Calendar, MapPin, Sparkles, User, Phone, ChevronRight, Award, Heart, Star, ShieldCheck, Tag } from 'lucide-react';
+import { Calendar, MapPin, Sparkles, User, Phone, ChevronRight, Award, Heart, Star, ShieldCheck, Tag, Percent, Gift } from 'lucide-react';
 import { Translation } from '../data/translations';
 
 interface HeroProps {
@@ -75,51 +75,107 @@ export const Hero: React.FC<HeroProps> = ({ t, onFormSubmit }) => {
             </p>
 
 
-            {/* Srikakulam Branch Complete IVF at ₹1.5 Lakhs Only Callout Banner */}
-            <div className="w-full bg-gradient-to-r from-[#FDE8E8] via-[#FFF3D6] to-[#FDE8E8] border border-amber-400/80 text-[#45144A] px-4 sm:px-5 py-2 sm:py-2.5 rounded-xl shadow-sm flex items-center gap-2 overflow-hidden">
-              <MapPin className="w-4 h-4 text-[#652D6C] shrink-0" />
-              <p className="text-xs sm:text-sm lg:text-base font-extrabold text-[#3D1443] tracking-tight whitespace-nowrap">
-                {t.hero.srikakulamOffer}
-              </p>
-            </div>
-
-            {/* Special Discount Offer Card comparing 1.9L vs 1.8L */}
-            <div className="text-white shadow-xl relative overflow-hidden border border-yellow-300/40 bg-gradient-to-r from-[#4A164E] via-[#652D6C] to-[#8F2D95] px-5 py-4 sm:px-6 sm:py-5 rounded-2xl">
-              {/* Decorative Background Glow */}
-              <div className="absolute -right-8 -bottom-8 w-32 h-32 bg-yellow-300/15 rounded-full blur-2xl pointer-events-none" />
-              <div className="absolute top-2 right-4 opacity-20 pointer-events-none">
-                <Sparkles className="w-16 h-16 text-yellow-300" />
-              </div>
-
-              <div className="relative z-10 space-y-2">
-                {/* Badges Bar */}
-                <div className="flex flex-wrap items-center gap-2">
-                  <span className="text-[11px] font-extrabold uppercase tracking-wider bg-yellow-400 text-[#4D1F53] px-3 py-0.5 rounded-full shadow-sm flex items-center gap-1">
-                    <Sparkles className="w-3.5 h-3.5 fill-current text-[#4D1F53]" />
-                    <span>{t.hero.offerBadge}</span>
-                  </span>
-
-                  <span className="text-[11px] font-extrabold uppercase tracking-wider bg-emerald-500 text-white px-3 py-0.5 rounded-full shadow-sm flex items-center gap-1 animate-pulse">
-                    <Tag className="w-3.5 h-3.5" />
-                    <span>{t.hero.offerSaveTag}</span>
-                  </span>
+            {/* Srikakulam Branch ₹1.5 Lakhs Special Discount Voucher (Reference Coupon Ticket) */}
+            <div className="relative w-full rounded-2xl p-1 bg-gradient-to-r from-[#D91B5C] via-[#C41261] to-[#8E0956] shadow-2xl overflow-hidden group">
+              {/* Inner Dashed Border Container */}
+              <div className="relative w-full rounded-xl border-2 border-dashed border-white/70 p-4 sm:p-5 flex flex-col sm:flex-row items-stretch justify-between gap-4 overflow-hidden bg-gradient-to-r from-[#D81B60]/95 via-[#C2185B]/95 to-[#880E4F]/95">
+                
+                {/* Decorative Sparkles & Glow */}
+                <div className="absolute top-2 left-1/3 w-32 h-32 bg-white/10 rounded-full blur-2xl pointer-events-none" />
+                <div className="absolute -bottom-6 -right-6 w-36 h-36 bg-pink-300/20 rounded-full blur-2xl pointer-events-none" />
+                <div className="absolute top-2 right-12 opacity-25 pointer-events-none">
+                  <Sparkles className="w-12 h-12 text-white" />
                 </div>
 
-                {/* Price Comparison */}
-                <div className="pt-0.5">
-                  <div className="flex items-baseline gap-2.5 flex-wrap">
-                    <span className="text-xs sm:text-sm text-purple-200/80 line-through font-bold">
-                      {t.hero.offerOriginalPrice}
+                {/* Left Ticket Body */}
+                <div className="flex-1 relative z-10 space-y-2.5">
+                  {/* Badges Bar: Srikakulam Branch Special & Save Tag */}
+                  <div className="flex flex-wrap items-center gap-2">
+                    <span className="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-white text-[#C2185B] text-[11px] sm:text-xs font-black uppercase tracking-wider shadow-sm">
+                      <MapPin className="w-3.5 h-3.5 fill-current" />
+                      <span>{t.hero.offerBadge}</span>
                     </span>
-                    <h3 className="text-lg sm:text-xl lg:text-2xl font-extrabold text-yellow-300 tracking-tight">
-                      {t.hero.offerText}
-                    </h3>
+
+                    <span className="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-yellow-400 text-[#4A164E] text-[11px] sm:text-xs font-black uppercase tracking-wider shadow-sm animate-pulse">
+                      <Sparkles className="w-3.5 h-3.5 fill-current" />
+                      <span>{t.hero.offerSaveTag}</span>
+                    </span>
                   </div>
 
-                  <p className="text-xs text-purple-100 font-medium mt-0.5">
-                    {t.hero.offerNote}
-                  </p>
+                  {/* Big Point: Headline & Huge Price Banner */}
+                  <div className="pt-0.5 space-y-1">
+                    <div className="flex items-center gap-2">
+                      {/* Delivery / Gift Badge Icon */}
+                      <div className="w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-white/15 border border-white/30 flex items-center justify-center shrink-0 text-white shadow-inner">
+                        <Gift className="w-5 h-5 text-yellow-300 fill-current" />
+                      </div>
+                      <div>
+                        <p className="text-[10px] sm:text-[11px] font-black uppercase tracking-widest text-pink-100/90 leading-tight">
+                          LIMITED TIME INAUGURAL OFFER
+                        </p>
+                        <p className="text-xs sm:text-sm font-bold text-white leading-tight">
+                          Save ₹40,000 vs Regular Market ₹1.9L
+                        </p>
+                      </div>
+                    </div>
+
+                    {/* Massive Big Point Text */}
+                    <div className="pt-1">
+                      <h3 className="font-poppins font-black text-xl sm:text-2xl lg:text-[26px] text-white tracking-tight leading-tight drop-shadow-sm">
+                        {t.hero.offerText}
+                      </h3>
+                    </div>
+                  </div>
+
+                  {/* Price Comparison Line & Note */}
+                  <div className="pt-0.5 space-y-1">
+                    <div className="flex items-baseline gap-2 flex-wrap">
+                      <span className="text-xs sm:text-sm text-pink-200 line-through font-bold">
+                        {t.hero.offerOriginalPrice}
+                      </span>
+                      <span className="text-xs sm:text-sm text-yellow-300 font-extrabold bg-black/20 px-2 py-0.5 rounded-md">
+                        Complete Package at ₹1.5 Lakhs
+                      </span>
+                    </div>
+
+                    <p className="text-[11px] sm:text-xs text-pink-100 font-medium leading-relaxed max-w-xl">
+                      {t.hero.offerNote}
+                    </p>
+                  </div>
+
+                  {/* Ticket Footer / T&C */}
+                  <div className="pt-1.5 flex items-center gap-2 text-[10px] sm:text-[11px] text-pink-200/90 font-bold uppercase tracking-wider border-t border-white/20">
+                    <span>VALID FOR A LIMITED TIME</span>
+                    <span>•</span>
+                    <span>T&C APPLY</span>
+                    <span>•</span>
+                    <span>ALL-INCLUSIVE TREATMENT</span>
+                  </div>
                 </div>
+
+                {/* Right Coupon Stub with Perforation & Cutout Notches */}
+                <div className="relative hidden sm:flex flex-col items-center justify-center pl-4 sm:pl-5 border-l-2 border-dashed border-white/50 shrink-0">
+                  {/* Top Notch Cutout */}
+                  <div className="absolute -top-6 -left-[13px] w-6 h-6 rounded-full bg-[#FAF6FA]" />
+                  {/* Bottom Notch Cutout */}
+                  <div className="absolute -bottom-6 -left-[13px] w-6 h-6 rounded-full bg-[#FAF6FA]" />
+
+                  {/* Stub Contents */}
+                  <div className="flex flex-col items-center justify-center text-center space-y-2 py-1">
+                    {/* Starburst % Badge */}
+                    <div className="w-14 h-14 rounded-full bg-white text-[#C2185B] font-black flex flex-col items-center justify-center shadow-lg transform group-hover:scale-105 transition-transform duration-300">
+                      <Percent className="w-5 h-5 text-[#C2185B]" />
+                      <span className="text-[9px] uppercase font-black tracking-tighter leading-none text-[#C2185B]">OFFER</span>
+                    </div>
+                    <span className="text-white font-black text-[11px] uppercase tracking-widest sm:rotate-90 sm:my-3 font-mono">
+                      COUPON
+                    </span>
+                    <span className="text-[10px] font-extrabold text-yellow-300 tracking-wider uppercase">
+                      SRIKAKULAM
+                    </span>
+                  </div>
+                </div>
+
               </div>
             </div>
 
