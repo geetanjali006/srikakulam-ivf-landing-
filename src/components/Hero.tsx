@@ -44,10 +44,19 @@ export const Hero: React.FC<HeroProps> = ({ t, onFormSubmit }) => {
           {/* Left Column: Headlines & Discount Offer */}
           <div className="space-y-4 sm:space-y-5 lg:col-span-7 order-2 lg:order-1">
             
+            {/* Eyebrow: MEDCY IVF */}
+            {t.hero.badge && (
+              <p className="font-poppins font-semibold text-[16px] sm:text-[17px] lg:text-[18px] text-[#652D6C] tracking-wide uppercase">
+                {t.hero.badge}
+              </p>
+            )}
+
             {/* Main Headline */}
-            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight text-[#2A102D] leading-[1.15]">
-              {t.hero.headlinePart1}
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#652D6C] via-[#9A389F] to-[#7E3282]">
+            <h1 className="tracking-tight text-[#2A102D] space-y-1">
+              <span className="block font-poppins font-[800] text-[32px] sm:text-[42px] lg:text-[50px] leading-[1.15] text-[#2A102D]">
+                {t.hero.headlinePart1}
+              </span>
+              <span className="block font-poppins italic font-[800] text-[32px] sm:text-[42px] lg:text-[50px] leading-[1.15] text-transparent bg-clip-text bg-gradient-to-r from-[#652D6C] via-[#9A389F] to-[#7E3282]">
                 {t.hero.headlineHighlight}
               </span>
             </h1>

@@ -20,6 +20,7 @@ export default {
       },
       fontFamily: {
         sans: ['Plus Jakarta Sans', 'Inter', 'system-ui', 'sans-serif'],
+        poppins: ['Poppins', 'sans-serif'],
         telugu: ['Gautami', 'Noto Sans Telugu', 'sans-serif']
       },
       boxShadow: {
