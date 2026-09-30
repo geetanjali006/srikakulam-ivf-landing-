@@ -162,7 +162,7 @@ export const translations: Record<Language, Translation> = {
       campLocation: "మెడ్సీ IVF, చిన్నగదిలి ప్లాట్ 9A, హెల్త్ సిటీ, విశాఖపట్నం, అడవివరం, ఆంధ్రప్రదేశ్ 530040"
     },
     hero: {
-      badge: "",
+      badge: "MEDCY IVF",
       brandTag: "MEDCY IVF",
       headlinePart1: "8,000+ కుటుంబాలు మాతో ఎదిగాయి.",
       headlineHighlight: "మీ కుటుంబం కూడా!",
@@ -407,7 +407,7 @@ export const translations: Record<Language, Translation> = {
       campLocation: "Medcy IVF, Chinnagadili Plot 9A, Health City, Visakhapatnam, Adavivaram, Andhra Pradesh 530040"
     },
     hero: {
-      badge: "",
+      badge: "MEDCY IVF",
       brandTag: "MEDCY IVF",
       headlinePart1: "8,000+ Families Grew With Us.",
       headlineHighlight: "Yours Can Too.",
