@@ -91,6 +91,15 @@ export interface Translation {
       achievementBadge: string;
     }[];
   };
+  whyChoose: {
+    title: string;
+    items: {
+      number: string;
+      title: string;
+      desc: string;
+      icon: string;
+    }[];
+  };
   ctaBanner: {
     title: string;
     subtitle: string;
@@ -288,6 +297,41 @@ export const translations: Record<Language, Translation> = {
           photo: "/dr-sudeshna-devi.png",
           bio: "లాపరోస్కోపిక్ సర్జరీ, హిస్టెరోస్కోపీ, రిప్రొడక్టివ్ మెడిసిన్ మరియు వ్యక్తిగతీకరించిన అండాశయ ప్రేరణ విధానాలలో ప్రముఖ వైద్య నిపుణులు.",
           achievementBadge: "Laparoscopic Specialist"
+        }
+      ]
+    },
+    whyChoose: {
+      title: "మా ప్రత్యేకతలు",
+      items: [
+        {
+          number: "1",
+          title: "8,000+ విజయవంతమైన కేసులు",
+          desc: "విశాఖపట్నం మరియు పరిసర ప్రాంతాలలో అత్యధిక సంతానలేమి విజయాలు.",
+          icon: "Trophy"
+        },
+        {
+          number: "2",
+          title: "జర్మన్ కీల్ ప్రొటోకాల్స్",
+          desc: "ప్రపంచ ప్రఖ్యాతి గాంచిన అంతర్జాతీయ ఎంబ్రియోలాజీ ల్యాబ్ ప్రమాణాలు.",
+          icon: "Gem"
+        },
+        {
+          number: "3",
+          title: "అనుభవజ్ఞులైన నిపుణులు",
+          desc: "20+ సంవత్సరాల అనుభవం కలిగిన సీనియర్ వైద్యుల సంరక్షణ.",
+          icon: "Stethoscope"
+        },
+        {
+          number: "4",
+          title: "వ్యక్తిగతీకరించిన సంరక్షణ",
+          desc: "ప్రతి జంటకు అనుకూలమైన చికిత్సా విధానాలు మరియు కౌన్సెలింగ్.",
+          icon: "HeartHandshake"
+        },
+        {
+          number: "5",
+          title: "అధునాతన సాంకేతికత",
+          desc: "లేటెస్ట్ లేజర్ హాచింగ్ మరియు మైక్రో-మనిప్యులేషన్ సాంకేతికత.",
+          icon: "Microscope"
         }
       ]
     },
@@ -496,6 +540,41 @@ export const translations: Record<Language, Translation> = {
           photo: "/dr-sudeshna-devi.png",
           bio: "Expert in laparoscopic surgery, hysteroscopy, reproductive medicine, and personalized ovulation induction protocols.",
           achievementBadge: "Laparoscopic Specialist"
+        }
+      ]
+    },
+    whyChoose: {
+      title: "Why Choose Medcy",
+      items: [
+        {
+          number: "1",
+          title: "8,000+ Success Stories",
+          desc: "Leading fertility institute with proven success rates across centres.",
+          icon: "Trophy"
+        },
+        {
+          number: "2",
+          title: "German Kiel Protocols",
+          desc: "State-of-the-art embryology lab bench-marked to global benchmarks.",
+          icon: "Gem"
+        },
+        {
+          number: "3",
+          title: "Senior Specialists",
+          desc: "Decades of dedicated clinical expertise in complex infertility.",
+          icon: "Stethoscope"
+        },
+        {
+          number: "4",
+          title: "Personalized Care",
+          desc: "Customized protocols tailored to your unique diagnostic profile.",
+          icon: "HeartHandshake"
+        },
+        {
+          number: "5",
+          title: "Cutting-Edge Tech",
+          desc: "Advanced laser hatching and high-precision micromanipulation.",
+          icon: "Microscope"
         }
       ]
     },
