@@ -44,25 +44,33 @@ export const Hero: React.FC<HeroProps> = ({ t, onFormSubmit }) => {
           {/* Left Column: Headlines & Discount Offer */}
           <div className="space-y-4 sm:space-y-5 lg:col-span-7 order-2 lg:order-1">
             
-            {/* Eyebrow: MEDCY IVF */}
-            {t.hero.badge && (
-              <p className="font-poppins font-semibold text-[16px] sm:text-[17px] lg:text-[18px] text-[#652D6C] tracking-wide uppercase">
-                {t.hero.badge}
-              </p>
+            {/* Brand Eyebrow: MEDCY IVF (Poppins SemiBold) */}
+            {t.hero.brandTag && (
+              <div className="font-poppins font-semibold text-xs sm:text-sm tracking-widest text-[#652D6C] uppercase flex items-center gap-2">
+                <span className="w-5 h-0.5 bg-[#9A389F]/50 rounded-full inline-block"></span>
+                <span>{t.hero.brandTag}</span>
+              </div>
             )}
 
             {/* Main Headline */}
-            <h1 className="tracking-tight text-[#2A102D] space-y-1">
-              <span className="block font-poppins font-[800] text-[32px] sm:text-[42px] lg:text-[50px] leading-[1.15] text-[#2A102D]">
+            <h1 className="tracking-tight text-[#2A102D] leading-[1.12]">
+              <span className="block font-poppins font-extrabold text-3xl sm:text-4xl lg:text-5xl text-[#2A102D]">
                 {t.hero.headlinePart1}
               </span>
-              <span className="block font-poppins italic font-[800] text-[32px] sm:text-[42px] lg:text-[50px] leading-[1.15] text-transparent bg-clip-text bg-gradient-to-r from-[#652D6C] via-[#9A389F] to-[#7E3282]">
+              <span className="block font-poppins font-extrabold italic text-3xl sm:text-4xl lg:text-5xl text-transparent bg-clip-text bg-gradient-to-r from-[#652D6C] via-[#9A389F] to-[#7E3282] mt-1 sm:mt-1.5">
                 {t.hero.headlineHighlight}
               </span>
             </h1>
 
+            {/* Tagline Line */}
+            {t.hero.tagline && (
+              <p className="text-base sm:text-lg lg:text-xl font-bold text-[#4D1F53] tracking-tight">
+                {t.hero.tagline}
+              </p>
+            )}
+
             {/* Subtext */}
-            <p className="text-sm sm:text-base lg:text-lg text-[#56335B] leading-relaxed max-w-2xl font-medium">
+            <p className="text-sm sm:text-base lg:text-base text-[#56335B] leading-relaxed max-w-2xl font-medium">
               {t.hero.subtext}
             </p>
 
@@ -88,17 +96,17 @@ export const Hero: React.FC<HeroProps> = ({ t, onFormSubmit }) => {
             </div>
 
             {/* Special Discount Offer Card comparing 1.9L vs 1.8L */}
-            <div className="text-white shadow-xl relative overflow-hidden border border-[#FFCC00]/40 bg-gradient-to-r from-[#4A164E] via-[#652D6C] to-[#8F2D95] px-5 py-4 sm:px-6 sm:py-5 rounded-2xl">
+            <div className="text-white shadow-xl relative overflow-hidden border border-yellow-300/40 bg-gradient-to-r from-[#4A164E] via-[#652D6C] to-[#8F2D95] px-5 py-4 sm:px-6 sm:py-5 rounded-2xl">
               {/* Decorative Background Glow */}
-              <div className="absolute -right-8 -bottom-8 w-32 h-32 bg-[#FFCC00]/15 rounded-full blur-2xl pointer-events-none" />
+              <div className="absolute -right-8 -bottom-8 w-32 h-32 bg-yellow-300/15 rounded-full blur-2xl pointer-events-none" />
               <div className="absolute top-2 right-4 opacity-20 pointer-events-none">
-                <Sparkles className="w-16 h-16 text-[#FFCC00]" />
+                <Sparkles className="w-16 h-16 text-yellow-300" />
               </div>
 
               <div className="relative z-10 space-y-2">
                 {/* Badges Bar */}
                 <div className="flex flex-wrap items-center gap-2">
-                  <span className="text-[11px] font-extrabold uppercase tracking-wider bg-[#FFCC00] text-[#4D1F53] px-3 py-0.5 rounded-full shadow-sm flex items-center gap-1">
+                  <span className="text-[11px] font-extrabold uppercase tracking-wider bg-yellow-400 text-[#4D1F53] px-3 py-0.5 rounded-full shadow-sm flex items-center gap-1">
                     <Sparkles className="w-3.5 h-3.5 fill-current text-[#4D1F53]" />
                     <span>{t.hero.offerBadge}</span>
                   </span>
@@ -115,7 +123,7 @@ export const Hero: React.FC<HeroProps> = ({ t, onFormSubmit }) => {
                     <span className="text-xs sm:text-sm text-purple-200/80 line-through font-bold">
                       {t.hero.offerOriginalPrice}
                     </span>
-                    <h3 className="text-lg sm:text-xl lg:text-2xl font-extrabold text-[#FFCC00] tracking-tight">
+                    <h3 className="text-lg sm:text-xl lg:text-2xl font-extrabold text-yellow-300 tracking-tight">
                       {t.hero.offerText}
                     </h3>
                   </div>

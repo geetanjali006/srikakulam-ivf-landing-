@@ -20,8 +20,8 @@ export default {
       },
       fontFamily: {
         sans: ['Plus Jakarta Sans', 'Inter', 'system-ui', 'sans-serif'],
+        telugu: ['Gautami', 'Noto Sans Telugu', 'sans-serif'],
         poppins: ['Poppins', 'sans-serif'],
-        telugu: ['Gautami', 'Noto Sans Telugu', 'sans-serif']
       },
       boxShadow: {
         'glass': '0 8px 32px 0 rgba(101, 45, 108, 0.12)',

@@ -21,9 +21,11 @@ export interface Translation {
   };
   hero: {
     badge: string;
+    brandTag?: string;
     headlinePart1: string;
     headlineHighlight: string;
     headlinePart2: string;
+    tagline?: string;
     subtext: string;
     locationBadge: string;
     offerBadge: string;
@@ -160,11 +162,13 @@ export const translations: Record<Language, Translation> = {
       campLocation: "మెడ్సీ IVF, చిన్నగదిలి ప్లాట్ 9A, హెల్త్ సిటీ, విశాఖపట్నం, అడవివరం, ఆంధ్రప్రదేశ్ 530040"
     },
     hero: {
-      badge: "MEDCY IVF",
+      badge: "",
+      brandTag: "MEDCY IVF",
       headlinePart1: "8,000+ కుటుంబాలు మాతో ఎదిగాయి.",
       headlineHighlight: "మీ కుటుంబం కూడా!",
       headlinePart2: "",
-      subtext: "నిపుణుల సంతానలేమి సంరక్షణ. పేరెంట్‌హుడ్ వైపు మీ ప్రయాణం ఇక్కడే ప్రారంభమవుతుంది.",
+      tagline: "అత్యుత్తమ ఫెర్టిలిటీ సంరక్షణ. తల్లిదండ్రులు కావాలనే మీ ప్రయాణం ఇక్కడే మొదలవుతుంది.",
+      subtext: "రుజువైన విజయవంతమైన రేట్లు, అగ్రశ్రేణి సంతానలేమి నిపుణులు మరియు అందుబాటు ధరల సంపూర్ణ చికిత్సా ప్రణాళికల కోసం మెడ్సీని ఎంచుకోండి. ఎటువంటి దాగి ఉన్న రుసుములు లేదా రిజిస్ట్రేషన్ ఛార్జీలు లేవు — మీరు తల్లిదండ్రులు కావడానికి తోడ్పడే నిజమైన నిపుణుల సంరక్షణ మాత్రమే.",
       locationBadge: "అరిలోవ హెల్త్ సిటీ, విశాఖపట్నం",
       offerBadge: "SPECIAL DISCOUNT PACKAGE OFFER",
       offerText: "IVF చికిత్స కేవలం ₹1.8 లక్షలకే!",
@@ -403,11 +407,13 @@ export const translations: Record<Language, Translation> = {
       campLocation: "Medcy IVF, Chinnagadili Plot 9A, Health City, Visakhapatnam, Adavivaram, Andhra Pradesh 530040"
     },
     hero: {
-      badge: "MEDCY IVF",
+      badge: "",
+      brandTag: "MEDCY IVF",
       headlinePart1: "8,000+ Families Grew With Us.",
       headlineHighlight: "Yours Can Too.",
       headlinePart2: "",
-      subtext: "Expert fertility care. Your journey to parenthood starts here.",
+      tagline: "Expert fertility care. Your journey to parenthood starts here.",
+      subtext: "Choose Medcy for proven success rates, top-tier fertility specialists, and highly affordable, all-inclusive treatment plans. No hidden fees, no registration charges—just genuine, expert care to help you become parents.",
       locationBadge: "Arilova Health City, Visakhapatnam",
       offerBadge: "SPECIAL DISCOUNT PACKAGE OFFER",
       offerText: "IVF TREATMENT AT ₹1.8 LAKHS ONLY",
