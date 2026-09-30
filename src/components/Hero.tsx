@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Calendar, MapPin, Sparkles, User, Phone, ChevronRight, Award, Heart, Star, ShieldCheck, Tag, Percent, Gift } from 'lucide-react';
+import { Calendar, Sparkles, User, Phone, ChevronRight, Percent } from 'lucide-react';
 import { Translation } from '../data/translations';
 
 interface HeroProps {
@@ -88,68 +88,28 @@ export const Hero: React.FC<HeroProps> = ({ t, onFormSubmit }) => {
                 </div>
 
                 {/* Left Ticket Body */}
-                <div className="flex-1 relative z-10 space-y-2.5">
-                  {/* Badges Bar: Srikakulam Branch Special & Save Tag */}
-                  <div className="flex flex-wrap items-center gap-2">
-                    <span className="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-white text-[#C2185B] text-[11px] sm:text-xs font-black uppercase tracking-wider shadow-sm">
-                      <MapPin className="w-3.5 h-3.5 fill-current" />
-                      <span>{t.hero.offerBadge}</span>
-                    </span>
-
-                    <span className="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-yellow-400 text-[#4A164E] text-[11px] sm:text-xs font-black uppercase tracking-wider shadow-sm animate-pulse">
-                      <Sparkles className="w-3.5 h-3.5 fill-current" />
-                      <span>{t.hero.offerSaveTag}</span>
-                    </span>
-                  </div>
-
+                <div className="flex-1 relative z-10 space-y-3">
                   {/* Big Point: Headline & Huge Price Banner */}
-                  <div className="pt-0.5 space-y-1">
-                    <div className="flex items-center gap-2">
-                      {/* Delivery / Gift Badge Icon */}
-                      <div className="w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-white/15 border border-white/30 flex items-center justify-center shrink-0 text-white shadow-inner">
-                        <Gift className="w-5 h-5 text-yellow-300 fill-current" />
-                      </div>
-                      <div>
-                        <p className="text-[10px] sm:text-[11px] font-black uppercase tracking-widest text-pink-100/90 leading-tight">
-                          LIMITED TIME INAUGURAL OFFER
-                        </p>
-                        <p className="text-xs sm:text-sm font-bold text-white leading-tight">
-                          Save ₹40,000 vs Regular Market ₹1.9L
-                        </p>
-                      </div>
-                    </div>
-
-                    {/* Massive Big Point Text */}
-                    <div className="pt-1">
-                      <h3 className="font-poppins font-black text-xl sm:text-2xl lg:text-[26px] text-white tracking-tight leading-tight drop-shadow-sm">
-                        {t.hero.offerText}
-                      </h3>
-                    </div>
+                  <div className="pt-0.5">
+                    <h3 className="font-poppins font-black text-xl sm:text-2xl lg:text-[28px] text-white tracking-tight leading-snug drop-shadow-sm">
+                      {t.hero.offerText}
+                    </h3>
                   </div>
 
                   {/* Price Comparison Line & Note */}
-                  <div className="pt-0.5 space-y-1">
-                    <div className="flex items-baseline gap-2 flex-wrap">
+                  <div className="space-y-1.5">
+                    <div className="flex items-baseline gap-2.5 flex-wrap">
                       <span className="text-xs sm:text-sm text-pink-200 line-through font-bold">
                         {t.hero.offerOriginalPrice}
                       </span>
-                      <span className="text-xs sm:text-sm text-yellow-300 font-extrabold bg-black/20 px-2 py-0.5 rounded-md">
+                      <span className="text-xs sm:text-sm text-yellow-300 font-extrabold bg-black/25 px-2.5 py-0.5 rounded-md">
                         Complete Package at ₹1.5 Lakhs
                       </span>
                     </div>
 
-                    <p className="text-[11px] sm:text-xs text-pink-100 font-medium leading-relaxed max-w-xl">
+                    <p className="text-xs sm:text-sm text-pink-100 font-medium leading-relaxed max-w-xl">
                       {t.hero.offerNote}
                     </p>
-                  </div>
-
-                  {/* Ticket Footer / T&C */}
-                  <div className="pt-1.5 flex items-center gap-2 text-[10px] sm:text-[11px] text-pink-200/90 font-bold uppercase tracking-wider border-t border-white/20">
-                    <span>VALID FOR A LIMITED TIME</span>
-                    <span>•</span>
-                    <span>T&C APPLY</span>
-                    <span>•</span>
-                    <span>ALL-INCLUSIVE TREATMENT</span>
                   </div>
                 </div>
 
@@ -161,16 +121,13 @@ export const Hero: React.FC<HeroProps> = ({ t, onFormSubmit }) => {
                   <div className="absolute -bottom-6 -left-[13px] w-6 h-6 rounded-full bg-[#FAF6FA]" />
 
                   {/* Stub Contents */}
-                  <div className="flex flex-col items-center justify-center text-center space-y-2 py-1">
+                  <div className="flex flex-col items-center justify-center text-center space-y-2 py-2">
                     {/* Starburst % Badge */}
                     <div className="w-14 h-14 rounded-full bg-white text-[#C2185B] font-black flex flex-col items-center justify-center shadow-lg transform group-hover:scale-105 transition-transform duration-300">
-                      <Percent className="w-5 h-5 text-[#C2185B]" />
+                      <Percent className="w-6 h-6 text-[#C2185B]" />
                       <span className="text-[9px] uppercase font-black tracking-tighter leading-none text-[#C2185B]">OFFER</span>
                     </div>
-                    <span className="text-white font-black text-[11px] uppercase tracking-widest sm:rotate-90 sm:my-3 font-mono">
-                      COUPON
-                    </span>
-                    <span className="text-[10px] font-extrabold text-yellow-300 tracking-wider uppercase">
+                    <span className="text-xs font-extrabold text-yellow-300 tracking-wider uppercase">
                       SRIKAKULAM
                     </span>
                   </div>
