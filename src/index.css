@@ -1,0 +1,126 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    background-color: #FAF6FA;
+    color: #2A102D;
+    font-family: 'Plus Jakarta Sans', 'Noto Sans Telugu', system-ui, sans-serif;
+    overflow-x: hidden;
+  }
+}
+
+/* Custom Glassmorphism Utility */
+.glass-card {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1.5px solid rgba(101, 45, 108, 0.2);
+  box-shadow: 0 10px 30px -5px rgba(101, 45, 108, 0.1);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.glass-card:hover {
+  border-color: rgba(154, 56, 159, 0.4);
+  box-shadow: 0 20px 40px -10px rgba(101, 45, 108, 0.18);
+}
+
+/* Starburst Discount Badge */
+.starburst-badge {
+  background: linear-gradient(135deg, #652D6C 0%, #9A389F 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.starburst-badge::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.3) 0%, transparent 60%);
+  animation: starburst-rotate 10s linear infinite;
+}
+
+@keyframes starburst-rotate {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Glowing outline button */
+.btn-primary-purple {
+  background: linear-gradient(135deg, #652D6C 0%, #4D1F53 100%);
+  color: #ffffff;
+  box-shadow: 0 4px 15px rgba(101, 45, 108, 0.3);
+  transition: all 0.25s ease;
+}
+
+.btn-primary-purple:hover {
+  background: linear-gradient(135deg, #7E3282 0%, #652D6C 100%);
+  box-shadow: 0 8px 25px rgba(154, 56, 159, 0.45);
+  transform: translateY(-2px);
+}
+
+.btn-accent {
+  background: linear-gradient(135deg, #9A389F 0%, #652D6C 100%);
+  color: #ffffff;
+  box-shadow: 0 4px 15px rgba(154, 56, 159, 0.35);
+  transition: all 0.25s ease;
+}
+
+.btn-accent:hover {
+  background: linear-gradient(135deg, #b043b6 0%, #7E3282 100%);
+  box-shadow: 0 8px 25px rgba(154, 56, 159, 0.5);
+  transform: translateY(-2px);
+}
+
+/* Doctor card custom elements matching reference image */
+.dr-card-header-badge {
+  background: rgba(101, 45, 108, 0.08);
+  color: #652D6C;
+  border: 1px solid rgba(101, 45, 108, 0.15);
+}
+
+.dr-qualifications-box {
+  background: #FAF3FB;
+  border: 1px solid rgba(101, 45, 108, 0.12);
+  color: #4D1F53;
+}
+
+.dr-name-tag {
+  background: #652D6C;
+  color: #FFFFFF;
+}
+
+/* Scroll smooth */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Infinite Marquee Ticker for Top Banner */
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee {
+  display: flex;
+  width: max-content;
+  animation: marquee 20s linear infinite;
+}
+
+.animate-marquee:hover {
+  animation-play-state: paused;
+}
